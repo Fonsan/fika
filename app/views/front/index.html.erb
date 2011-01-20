@@ -15,7 +15,7 @@
       <td><%= person.name %></td>
       <td><%= person.points %></td>
 	  <td><%= f.text_field :points, :size => 4 %></td>
-	  <td><%= f.submit %></td>
+	  <td><%= f.submit "Lägg till poäng" %></td>
 	  
     </tr>
 	<% end%>
@@ -26,13 +26,15 @@
 
 <table>
   <tr>
+	<th>Tidpunkt</th>
     <th>Person</th>
     <th>Ip</th>
 	<th>Points</th>
   </tr>
   <% for change in @changes %>
     <tr>
-      <td><%= change.person_id %></td>
+	  <td><%= change.created_at %></td>
+      <td><%= change.person.name %></td>
       <td><%= change.nice_ip %></td>
       <td><%= change.points %></td>
     </tr>
