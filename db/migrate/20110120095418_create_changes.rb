@@ -3,6 +3,7 @@ class CreateChanges < ActiveRecord::Migration
     create_table :changes do |t|
       t.integer :person_id
       t.integer :ip
+      t.integer :points
       t.timestamps
     end
   end

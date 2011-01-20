@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20110120095418) do
   create_table "changes", :force => true do |t|
     t.integer  "person_id"
     t.integer  "ip"
+    t.integer  "points"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
