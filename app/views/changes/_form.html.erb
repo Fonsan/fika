@@ -1,0 +1,16 @@
+<%= form_for @change do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :person_id %><br />
+    <%= f.text_field :person_id %>
+  </p>
+  <p>
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </p>
+  <p>
+	<%= f.label :points %><br />
+	<%= f.text_field :points %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

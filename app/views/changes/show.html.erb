@@ -1,0 +1,16 @@
+<% title "Change" %>
+
+<p>
+  <strong>Person:</strong>
+  <%= @change.person_id %>
+</p>
+<p>
+  <strong>Ip:</strong>
+  <%= @change.ip %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_change_path(@change) %> |
+  <%= link_to "Destroy", @change, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", changes_path %>
+</p>

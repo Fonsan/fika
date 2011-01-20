@@ -1,0 +1,19 @@
+<% title "Changes" %>
+
+<table>
+  <tr>
+    <th>Person</th>
+    <th>Ip</th>
+  </tr>
+  <% for change in @changes %>
+    <tr>
+      <td><%= change.person_id %></td>
+      <td><%= change.ip %></td>
+      <td><%= link_to "Show", change %></td>
+      <td><%= link_to "Edit", edit_change_path(change) %></td>
+      <td><%= link_to "Destroy", change, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Change", new_change_path(change) %></p>
